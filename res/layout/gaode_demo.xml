@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#FF9bd7f7"
+    tools:context="com.example.helloworld.MainActivity" >
+    
+    
+    
+	 <Button 
+	   android:id="@+id/button" 
+	       android:layout_width="wrap_content" 
+	  android:layout_height="wrap_content"
+	  android:visibility="gone"
+	     />
+
+
+	 <Spinner
+	     android:id="@+id/spin_num"
+	     android:layout_width="50dp"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentLeft="true"
+	     android:background="@drawable/bg_button"
+	     android:layout_marginLeft="5dip"
+	     android:layout_alignParentTop="true" />
+	 
+	 <Spinner
+	     android:id="@+id/spinner1"
+	     android:layout_width="120dp"
+	     android:layout_height="wrap_content"
+	    android:background="@drawable/bg_button"
+	    android:layout_marginLeft="3dip"
+	     android:layout_toRightOf="@+id/spin_num" />
+
+	 <Button
+	     android:id="@+id/but1"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentTop="true"
+	     android:layout_toRightOf="@+id/spinner1"
+	     android:background="@drawable/bg_button"
+	     android:layout_alignBaseline="@+id/spin_num"
+	     android:layout_marginLeft="3dip"
+	     android:text="@string/btngetgps" />
+	 
+	  <Button
+	     android:id="@+id/freshgps"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentTop="true"
+	     android:layout_alignParentRight="true"
+	     android:layout_marginTop="7dip"
+	     android:layout_marginRight="5dip"
+	     android:background="@drawable/freshbtn" />
+	  
+	 <com.amap.api.maps2d.MapView
+	     android:id="@+id/main_mapView"
+	     android:layout_width="fill_parent"
+	     android:layout_height="fill_parent"
+	     android:layout_alignParentLeft="true"
+	     android:layout_alignParentRight="true"
+	     android:layout_below="@+id/spin_num" >
+
+	 </com.amap.api.maps2d.MapView>
+
+	 <ImageView
+	     android:id="@+id/mylocation"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentBottom="true"
+	     android:layout_alignParentLeft="true"
+	      android:layout_marginBottom="20dp"
+	       android:layout_marginLeft="20dp"
+	     android:src="@android:drawable/star_big_on" />
+	 
+	 <ImageView
+	     android:id="@+id/editbindphone"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_above="@id/mylocation"
+	      android:layout_marginBottom="10dp"
+	       android:layout_marginLeft="20dp"
+	      
+	     android:src="@android:drawable/ic_menu_edit" />
+	 
+	  <ImageView
+	     android:id="@+id/addphone"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_above="@id/editbindphone"
+	      android:layout_marginBottom="10dp"
+	       android:layout_marginLeft="20dp"
+	      
+	     android:src="@android:drawable/ic_menu_add" />
+	  
+	  <ImageView
+	     android:id="@+id/help"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_toRightOf="@id/mylocation"
+	     android:layout_alignParentBottom="true"
+	       android:layout_marginLeft="10dp"
+	       android:layout_marginBottom="20dp"
+	       android:visibility="visible"
+	     android:src="@android:drawable/ic_menu_help" />
+	  
+	   <ImageView
+	     android:id="@+id/guijiplay"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_toRightOf="@id/mylocation"
+	     android:layout_alignParentBottom="true"
+	       android:layout_marginLeft="55dp"
+	       android:layout_marginBottom="20dp"
+	       android:visibility="invisible"
+	     android:src="@android:drawable/ic_media_play" />
+	   
+	    <ImageView
+	     android:id="@+id/guijipause"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_toRightOf="@id/guijiplay"
+	     android:layout_alignParentBottom="true"
+	       android:layout_marginLeft="15dp"
+	       android:layout_marginBottom="20dp"
+	       android:visibility="invisible"
+	     android:src="@android:drawable/ic_media_pause" />
+
+	  <TextView 
+	     android:id="@+id/batterinfo"
+	     android:background="#80FFFFFF"
+	     style="@style/Transparent"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentLeft="true"
+	     android:layout_below="@id/spin_num"
+	     android:text="欢迎使用"/>
+	  
+	   <TextView 
+	     android:id="@+id/liebiao"
+	     android:background="#80000000"
+	     style="@style/Transparent"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentRight="true"
+	     android:layout_marginRight="10dip"
+	     android:layout_marginTop="30dip"
+	     android:layout_below="@id/spin_num"
+	     android:text="列表模式"/>
+	   
+	  <LinearLayout
+        android:id="@+id/menu_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:orientation="vertical" >
+      <Button
+        android:id="@+id/menu_qna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/bg_text"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="使用问题Q&amp;A" />
+
+      <Button
+        android:id="@+id/menu_chuji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/bg_text"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="初级设置教程" />
+      
+      <Button
+        android:id="@+id/menu_gaoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/bg_text"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="高级设置教程" />
+      <Button
+        android:id="@+id/menu_thisid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:background="@drawable/bg_text"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="本设备序列号"
+         />
+      <Button
+        android:id="@+id/menu_downloadapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:background="@drawable/bg_text"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="下载定位app"
+         />
+      <Button
+        android:id="@+id/menu_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:background="@drawable/bg_text"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="关于本软件"
+         />
+
+    </LinearLayout>
+    
+</RelativeLayout>

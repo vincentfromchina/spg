@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">防走丢监控端</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_net">网络定位</string>
+    <string name="btn_gps">gps定位</string>
+    <string name="urlLocation">浏览器定位</string>
+    <string name="startAssistantLocation">启动H5辅助定位</string>
+    <string name="stopAssistantLocation">停止H5辅助定位</string>
+    <string name="openview">轨迹记录</string>
+    <string name="btngetgps">刷新设备</string>
+    <string name="title_activity_bind">BindActivity</string>
+    <string name="bind_remind">请输入需要绑定的设别号</string>
+    <string name="bind_queidng">确定</string>
+    <string name="bind_remain">请输入要绑定的设备号</string>
+    <string name="url">http://dayuinf.com</string>
+    <string name="title_activity_changebindname">ChangebindnameActivity</string>
+    <string name="txt_changbindtext">更改设备别名和显示图片</string>
+    <string name="title_activity_bindpic">选择显示图片</string>
+    <string name="bind_pic">确定</string>
+    <string name="title_activity_liebiao">LiebiaoActivity</string>
+    <string name="chuji">/about/chuji.html</string>
+    <string name="qna">/about/qna.html</string>
+    <string name="gaoji">/about/gaoji.html</string>
+    <string name="about">/about/about.html</string>
+    <string name="downapp">/about/downapp.html</string>
+    <string name="isexp">/about/isexp.html</string>
+     <string name="menu_qna">使用问题Q &amp; A</string>
+    <string name="title_activity_showseri">ShowseriActivity</string>
+    <string name="cardpwd">请输入代金券号码</string>
+    <string name="cardpwd_serialno">请输入需要增加有效期的设备号</string>
+	
+</resources>

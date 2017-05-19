@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+   
+     <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+            
+      <RelativeLayout
+            android:id="@+id/lef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             >
+           <TextView 
+             android:id="@+id/weizhi"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="位置"
+             android:textColor="#ffdc329c"
+             
+             />
+         <TextView 
+             android:id="@+id/pos"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text=""
+             android:textColor="#ffdc329c"
+             android:layout_toRightOf="@+id/weizhi"
+             android:layout_marginLeft="2dip"
+             
+             />
+            
+        </RelativeLayout>
+         <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_toRightOf="@+id/lef"
+            android:layout_marginLeft="10dip"
+            >
+            <TextView 
+	             android:id="@+id/kaishi"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text="时间："
+	             android:textColor="#ff000000"
+	             android:layout_marginTop="10dip"
+	             />
+	        <TextView 
+	             android:id="@+id/stime"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text=""
+	             android:textColor="#ff000000"
+	             android:layout_toRightOf="@+id/kaishi"
+	             android:layout_marginTop="10dip"
+	             />
+	        <TextView 
+	             android:id="@+id/addr"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text=""
+	             android:textSize="20sp"
+	             android:layout_below="@+id/stime"
+	             android:textColor="#ff0b557d"
+	             android:layout_marginTop="10dip"
+	             />
+	        <TextView 
+	             android:id="@+id/lctype"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text=""
+	             android:textColor="#ffdc329c"
+	             android:layout_below="@+id/addr"
+	             android:layout_toLeftOf="@+id/accuracy"
+	             android:layout_marginTop="5dip"
+	             android:layout_marginBottom="5dip"
+	             />
+	        <TextView 
+	             android:id="@+id/accuracy"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text=""
+	             android:textColor="#ffdc329c"
+	             
+	             android:layout_below="@+id/addr"
+	             android:layout_marginTop="5dip"
+	             android:layout_alignParentRight="true"
+	             android:layout_marginBottom="5dip"
+	             />
+	     
+            
+        </RelativeLayout>
+      
+            
+        </RelativeLayout>
+     
+</LinearLayout>
+ </ScrollView>
