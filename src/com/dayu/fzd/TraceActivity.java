@@ -78,6 +78,7 @@ import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 
 import android.widget.AdapterView.OnItemSelectedListener;
+import cn.jpush.android.api.JPushInterface;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -123,7 +124,7 @@ public class TraceActivity extends Activity implements OnMapLoadedListener, OnMa
 	private static int nowplayid = 0,progessperct = 0;
 	private static guijiplay mguijiplay = null;
 	private static Boolean isstart = false, isplaypause = false,cancelupdate = false;
-	public static Boolean isdebug = false;
+	public static Boolean isdebug = true;
 	public static ProgressBar mProgressBar;
 	private static String mSavepath = "", apkurl = "", apkname = "", apkversion = "";
 	
@@ -979,6 +980,9 @@ public class TraceActivity extends Activity implements OnMapLoadedListener, OnMa
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.gaode_demo);
+		
+		 JPushInterface.setDebugMode(isdebug); 	// 设置开启日志,发布时请关闭日志
+         JPushInterface.init(this);     		// 初始化 JPush
 		
 		if (savedInstanceState!=null )
 		{
